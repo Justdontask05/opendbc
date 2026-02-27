@@ -4,6 +4,7 @@ import platform
 system = platform.system()
 
 env = Environment(
+  CC='clang',
   CFLAGS=[
     '-Wall',
     "-Wextra",
@@ -16,6 +17,7 @@ env = Environment(
     '-g',
     '-O0',
     '-fno-omit-frame-pointer',
+    '-grecord-command-line',
     '-DALLOW_DEBUG',
   ],
   LINKFLAGS=[
