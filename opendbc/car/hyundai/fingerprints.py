@@ -609,6 +609,7 @@ FW_VERSIONS = {
   ],
   (Ecu.fwdRadar, 0x7d0, None): [
     b'\xf1\x00CL4_ RDR -----      1.00 1.01 99110-GG100         ',
+    b'\xf1\x8b %\x05\x02',
   ],
   (Ecu.adas, 0x730, None): [
     b'\xf1\x00CL4 FBL8 1.00 1.03 240729',
