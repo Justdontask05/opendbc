@@ -443,7 +443,7 @@ class CAR(Platforms):
       HyundaiCarDocs("Kia K4 (with HDA II) 2025", car_parts=CarParts.common([CarHarness.hyundai_r])),
     ],
     CarSpecs(mass=3283 * CV.LB_TO_KG, wheelbase=2.72, steerRatio=13.35),
-    flags=HyundaiFlags.CCNC | HyundaiFlags.CANFD_NO_RADAR_DISABLE,
+    flags=HyundaiFlags.CCNC,
   )
   KIA_K5_2021 = HyundaiPlatformConfig(
     [HyundaiCarDocs("Kia K5 2021-24", car_parts=CarParts.common([CarHarness.hyundai_a]))],
