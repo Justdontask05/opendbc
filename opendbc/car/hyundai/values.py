@@ -377,8 +377,7 @@ class CAR(Platforms):
   )
   KIA_K4 = HyundaiPlatformConfig(
     [HyundaiCarDocs("Kia K4 2025", car_parts=CarParts.common([CarHarness.hyundai_r]))],
-    CarSpecs(mass=2987 * CV.LB_TO_KG, wheelbase=2.72, steerRatio=13.4, tireStiffnessFactor=0.5),  # 2021 Kia K5 Steering Ratio (all trims)
-    flags=HyundaiFlags.CHECKSUM_CRC8,
+    CarSpecs(mass=2987 * CV.LB_TO_KG, wheelbase=2.72, steerRatio=13.4, tireStiffnessFactor=0.5),
   )
   KIA_K5_2021 = HyundaiPlatformConfig(
     [HyundaiCarDocs("Kia K5 2021-24", car_parts=CarParts.common([CarHarness.hyundai_a]))],
