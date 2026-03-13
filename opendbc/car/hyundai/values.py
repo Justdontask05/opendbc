@@ -184,6 +184,13 @@ class CAR(Platforms):
     HYUNDAI_ELANTRA.specs,
     flags=HyundaiFlags.LEGACY | HyundaiFlags.CLUSTER_GEARS | HyundaiFlags.MIN_STEER_32_MPH,
   )
+  KIA_K4_2025 = HyundaiCanFDPlatformConfig(
+    [
+      HyundaiCarDocs("Kia K4 (with HDA II) 2025", car_parts=CarParts.common([CarHarness.hyundai_r])),
+    ],
+    CarSpecs(mass=2987 * CV.LB_TO_KG, wheelbase=2.72, steerRatio=13.4),
+    flags=HyundaiFlags.CHECKSUM_CRC8,
+  )
   HYUNDAI_ELANTRA_2021 = HyundaiPlatformConfig(
     [HyundaiCarDocs("Hyundai Elantra 2021-23", video="https://youtu.be/_EdYQtV52-c", car_parts=CarParts.common([CarHarness.hyundai_k]))],
     CarSpecs(mass=2800 * CV.LB_TO_KG, wheelbase=2.72, steerRatio=12.9, tireStiffnessFactor=0.65),
